@@ -83,6 +83,7 @@ EOT
 
         if ('annotation' === $type) {
             $entityGenerator = $this->getEntityGenerator();
+            $entityGenerator->setAnnotationPrefix('ORM\\');
             $exporter->setEntityGenerator($entityGenerator);
         }
 
